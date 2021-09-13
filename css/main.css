@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.clearfloat {
+  float: left;
+  clear: left;
+
+}
+
+/* CSS styling General */
+
+body {
+  width: 900px;
+  margin: 10px auto 10px auto;
+  border-top: solid 1px #8e8e8e;
+  background-image:  url("../img/bg-texture.png");
+  color: #666666;
+}
+
+#outer {
+  padding: 10px 10px 10px 10px;
+}
+
+main {
+
+  margin: 5px 5px 5px 5px;
+  clear: left;
+  float: left;
+}
+
+
+header {
+
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+
+}
+
+nav {
+  text-align: left;
+  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+  padding: 5px 5px 5px 5px;
+  margin: 5px 5px 5px 5px;
+}
+
+
+#primary {
+  width: 375px;
+  padding: 4px 4px 4px 4px;
+  margin: 4px 4px 4px 4px;
+  border-right: 1px solid #cccccc;
+  clear: left;
+  float: left;
+
+}
+
+
+#secondary {
+  width: 130px;
+  padding: 4px 4px 4px 4px;
+  margin: 4px 4px 4px 4px;
+  border-right: 1px solid #cccccc;
+  float: left;
+
+}
+
+#tertiary {
+  width: 244px;
+  padding: 4px 4px 4px 4px;
+  margin: 4px 4px 4px 4px;
+  border-right: 1px solid #cccccc;
+  float: left;
+}
+
+article  {
+  padding: 10px;
+  margin: 10px;
+  float: left;
+}
+
+section  {
+  padding: 10px;
+  margin: 10px;
+  float: left;
+}
+
+aside  {
+  padding: 10px;
+  margin: 10px;
+  float: left;
+}
+
+
+#footer {
+  border-top: 1px solid #8e8e8e;
+  border-bottom: 1px solid #8e8e8e;
+  background-color: #d3d3d3;
+  margin: 4px 4px 4px 4px;
+  padding: 4px 4px 4px 4px;
+  clear:left;
+  float: left;
+  columns: 3;
+}
+
+
+
+h1 {
+  font-family: Times, ”Times New Roman”, serif;
+  font-size: 20pt;
+}
+
+h2 {
+  font-family: Times, ”Times New Roman”, serif;
+  font-size: 15pt;
+
+}
+
+h3 {
+  font-family: Times, ”Times New Roman”, serif;
+  font-size: 13pt;
+
+}
+
+h4 {
+  font-family: Times, ”Times New Roman”, serif;
+  font-size: 12pt;
+
+}
+
+h5 {
+  font-family: Times, ”Times New Roman”, serif;
+  font-size: 11pt;
+
+}
+
+h6 {
+  font-family: Times, ”Times New Roman”, serif;
+  font-size: 10pt;
+
+}
+
+p {
+  font-family: Times, ”Times New Roman”, serif;
+  font-size: 9pt;
+
+}
+
+/* Video Controls */
+
+#video-container {
+  width: 373px;
+  margin: 0 auto;
+  position: relative;
+}
+
+video {
+  display: block;
+  margin-bottom: 12px;
+}
+
+
+video,.content h1 {
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  column-span: all;
+  clear: both;
+}
+
+.cnvs {
+  position: absolute;
+  top: 0; left: 0;
+   /* to avoid seeing the video in color for a second before the JavaScript runs
+     * show a black background instead */
+  background-color: black;
+  margin-bottom: 25px;
+}
+
+.vc {
+  width: 373px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.ctrl {
+  position: absolute;
+  bottom: 0px;
+  opacity: .5;
+  -webkit-transition: opacity .7s linear;
+  transition: opacity .7s linear;
+}
+
+.ctrl:hover {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+.pp,.mu {
+  width: 25px;
+  height: 25px;
+  float: left;
+  text-indent: -9999em;
+  border-right: solid 1px #555;
+}
+
+.pp:hover,  .mu:hover {
+  cursor: pointer;
+}
+
+.paused {
+  background: #ccc url(/img/controls-sprite.png) no-repeat 0 -75px;
+}
+
+.playing {
+  background-position: 0 -50px;
+ }
+
+.timer {
+  width: 321px;  height: 25px;
+  background: #ccc;
+  float: left;
+  text-align: center;
+  line-height: 25px;
+  overflow: hidden;
+}
+
+.mu {
+  overflow: hidden;
+  border-right: none;
+  border-left: solid 1px #555;
+}
+
+.unmuted {
+  background: #ccc url(/img/controls-sprite.png) no-repeat 0 -25px;
+}
+
+.muted {
+   background-position: 0 0;
+ }
