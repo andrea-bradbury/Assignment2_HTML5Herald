@@ -7,6 +7,8 @@
   <meta name="HTML5 Herald" >
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <meta http-equiv=“X-UA-Compatible“ content=“IE=Edge“> :
 </head>
 
 <body>
@@ -18,14 +20,27 @@
         <img src="img/logo.png" alt="HTML5 Herald Logo."/>
         <h1> HERALD </h1>
         <p>Produced with that good ol' timey HTML5 and CSS.</p>
+
         <nav>
-          <p>Volume 33</p>
+          <p>Volume MMXI</p>
+          <ul>Home</ul>
+          <ul>Sign Up</ul>
+          <ul>Canvas Demo</ul>
         </nav>
       </header>
 
       <main>
         <section id="primary">
-            <article>
+            <article id="ac1">
+              <div id="video-container">
+                <video poster="poster.jpg" width="618" height="347" controls preload>
+                  <source src="video.mp4" media="only screen and (min-device-width 568px)"></source>
+                  <source src="video.iphone.mp4" media="only screen and (max-devicewidth: 568px)"></source>
+                  <source src="video.ogv"></source>
+                </video>
+                Your browser does not support the video tag.
+              </video>
+              </div>
               <h1>Video is the final frontier, and now we have conquered it!</h1>
               <p>
                 Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla.
@@ -49,7 +64,7 @@
         </section>
 
         <article id="secondary">
-            <article>
+            <article id="ac2">
               <h2>Text Shadow is the New Black</h2>
               <h3>How do we do it?</h3>
               <p>
@@ -58,7 +73,7 @@
                 Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blan- dit.
               </p>
             </article>
-            <article>
+            <article id="ac3">
               <h2> Wai-Aria? HAHA!</h2>
               <h3>Form Accessibility</h3>
               <p>
@@ -69,10 +84,9 @@
                 Nam vestibulum, arcu sodales feugiat.
               </p>
             </article>
-            <article>
+            <article id="ac4">
               <h2>Modernizr Times</h2>
               <h3>A New Era</h3>
-
               <p>
                 Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum.
                 Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blan- dit.
@@ -83,10 +97,23 @@
 
         <article id="tertiary">
           <aside>
-            <h1>Ad 1 </h1>
-            <h1>Ad 2 </h1>
+            <article id="ad1">
+              <h1>WANTED </h1>
+              <p>DEAD OR ALIVE </p>
+              <a href="http://sitepoint.com/books/htmlcss1/" class="wanted">&lt;HTML5&gt; & {CSS3}</a>
+              <p>Reward: Happiness and satisfaction</p>
+            </article>
+            <article id="ad2">
+              <h1>Put your <span>dukes</span> up sire</h1>
+              <p>It’s time for a good old thrashing.<br>
+                I will rotate your moustache OFF!</p>
+            </article>
+            <article id="ad3">
+              <h1><a href=“http://sitepoint.com/books/htmcss1/“>
+                HTML5 and CSS3<br/>Now in Book Form!</a></h1>
+            </article>
           </aside>
-          <article>
+          <article id="ac5">
             <h2>CSS Transitions - The State of Play</h2>
             <h3>The future?</h3>
 
