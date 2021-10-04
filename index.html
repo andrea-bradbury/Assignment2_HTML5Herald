@@ -8,65 +8,100 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
-  <meta http-equiv=“X-UA-Compatible“ content=“IE=Edge“> :
 </head>
 
 <body>
   <div id="outer">
 
       <header>
-        <h3> THE </h3>
-        <h1> HTML5 </h1>
-        <img src="img/logo.png" alt="HTML5 Herald Logo."/>
-        <h1> HERALD </h1>
-        <p>Produced with that good ol' timey HTML5 and CSS.</p>
+        <h1>
+          <span id="headingSpan"> THE </span>
+          <a href="index.html">
+            HTML
+            <img src="img/logo.png" alt="HTML5 Herald Logo."/>
+            HERALD
+          </a>
 
+        </h1>
+        <p id="tagline">Produced with that good ol' timey HTML5 and CSS.</p>
         <nav>
-          <p>Volume MMXI</p>
-          <ul>Home</ul>
-          <ul>Sign Up</ul>
-          <ul>Canvas Demo</ul>
+          <p id="volume">Volume MMXI</p>
+          <p id="time">June 4, 1904</p>
+          <ul>
+            <li>
+              <a href="#Home"> Home</a>
+            </li>
+            <li>
+              <a href="#SignUp"> Sign Up</a>
+            </li>
+            <li>
+              <a href="#CanvasDemo"> Canvas Demo</a>
+            </li>
+          </ul>
         </nav>
       </header>
 
       <main>
-        <section id="primary">
+        <section class="primary">
             <article id="ac1">
-              <div id="video-container">
-                <video poster="poster.jpg" width="618" height="347" controls preload>
-                  <source src="video.mp4" media="only screen and (min-device-width 568px)"></source>
-                  <source src="video.iphone.mp4" media="only screen and (max-devicewidth: 568px)"></source>
-                  <source src="video.ogv"></source>
+              <div class="videoControls">
+                <video width="373" height="280" preload="" poster="img/ford-plane-still.png">
+                  <source src="img/ford-plane-takes-off.mp4" type="video/mp4"><!-- Safari / iOS video -->
+                  <source src="img/ford-plane-takes-off.ogv" type="video/ogg"><!-- Firefox / Opera / Chrome10 -->
                 </video>
-                Your browser does not support the video tag.
-              </video>
+                <canvas id="canvasOverlay" width="373" height="280" ></canvas>
+                <div class="ctrl">
+                  <div id="playPause" class="pp paused" tabindex="1" title="Play">Play/Pause</div>
+                  <div id="timer" class="timer">00:00</div>
+                  <div id="muteUnmute" class="mu unmuted" tabindex="2">Mute/Un­mute</div>
+                </div><!-- #controls -->
+              </div><!-- /#video-container -->
+
+              <h1 class="primaryH1">Video is the final frontier, and now we have conquered it!</h1>
+              <div class="primaryColContent">
+                <p>
+                  Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla.
+                </p>
+                <p>
+                  In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat con- sectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus.
+                </p>
+                <p>
+                  Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
+                </p>
+                <p>
+                  Neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacin- ia vel velit. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas.
+                </p>
+                <p>
+                  Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
+                </p>
               </div>
-              <h1>Video is the final frontier, and now we have conquered it!</h1>
-              <p>
-                Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla.
-                In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat con- sectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus.
-                Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
-                Neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacin-
-                ia vel velit. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
-              </p>
             </article>
             <article>
-              <h1>Great Things Are Possible with CSS Columns! Pip Pip Pip!</h1>
-              <p>
-                Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
-                Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blan- dit.
-                Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
-                Neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacin-
-                ia vel velit. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
-                Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blan- dit.
-              </p>
+              <h1 class="primaryH1">Great Things Are Possible with CSS Columns! Pip Pip Pip!</h1>
+              <div class="primaryColContent">
+                <p>
+                  Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
+                  </p>
+                <p>
+                  Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blan- dit.
+                </p>
+                <p>
+                  Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
+                </p>
+                <p>
+                  Neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacin- ia vel velit. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
+                </p>
+                <p>
+                  Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blan- dit.
+                </p>
+              </div>
             </article>
         </section>
 
-        <article id="secondary">
+        <article class="secondary">
             <article id="ac2">
-              <h2>Text Shadow is the New Black</h2>
-              <h3>How do we do it?</h3>
+              <h1 class="secondaryH1">Text Shadow is the New Black</h1>
+              <h2>How do we do it?</h2>
               <p>
                 Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam
                 vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
@@ -74,8 +109,8 @@
               </p>
             </article>
             <article id="ac3">
-              <h2> Wai-Aria? HAHA!</h2>
-              <h3>Form Accessibility</h3>
+              <h1 class="secondaryH1"> Wai-Aria? HAHA!</h1>
+              <h2>Form Accessibility</h2>
               <p>
                 Needs cat image + JS.
 
@@ -85,8 +120,8 @@
               </p>
             </article>
             <article id="ac4">
-              <h2>Modernizr Times</h2>
-              <h3>A New Era</h3>
+              <h1 class="secondaryH1">Modernizr Times</h1>
+              <h2>A New Era</h2>
               <p>
                 Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum.
                 Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blan- dit.
@@ -95,7 +130,7 @@
         </article>
 
 
-        <article id="tertiary">
+        <article class="tertiary">
           <aside>
             <article id="ad1">
               <h1>WANTED </h1>
@@ -116,15 +151,26 @@
           <article id="ac5">
             <h2>CSS Transitions - The State of Play</h2>
             <h3>The future?</h3>
-
-            <p>
-              Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
-              Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum.
-              Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
-              Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at. vestibulum. Nulla at.
-              Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
-              Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at. vestibulum. Nulla at.
-            </p>
+            <div class="teraryColContent">
+              <p>
+                Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
+              </p>
+              <p>
+                Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum.
+              </p>
+              <p>
+                Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
+              </p>
+              <p>
+                Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at. vestibulum. Nulla at.
+              </p>
+              <p>
+                Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.
+              </p>
+              <p>
+                Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at. vestibulum. Nulla at.
+              </p>
+            </div>
           </article>
         </article>
 
