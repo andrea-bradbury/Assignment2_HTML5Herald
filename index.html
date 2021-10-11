@@ -44,18 +44,27 @@
       <main>
         <section class="primary">
             <article id="ac1">
-              <div class="videoControls">
-                <video width="373" height="280" preload="" poster="img/ford-plane-still.png">
-                  <source src="img/ford-plane-takes-off.mp4" type="video/mp4"><!-- Safari / iOS video -->
-                  <source src="img/ford-plane-takes-off.ogv" type="video/ogg"><!-- Firefox / Opera / Chrome10 -->
+              <div class="vc">
+                <video width="373" height="280" preload="" id="video" poster="img/ford-plane-still.png">
+                  <source src="img/ford-plane-takes-off.mp4" type="video/mp4">
+                  <source src="img/ford-plane-takes-off.ogv" type="video/ogg">
+                  <object width="373" height="280" type="application/x-shockwave-flash" data="jwplayer/player.swf">
+                    <param name="movie" value="jwplayer/player.swf">
+                    <param name="allowFullScreen" value="true">
+                    <param name="wmode" value="transparent">
+                    <param name="flashvars" value="controlbar=over&amp;image=img/ford-plane-still.png&amp;file=../img/ford-plane-takes-off.mp4">
+                    <img src="img/ford-plane-still.png" id="video-still" width="373" height="280" alt="Airplane" title="If you're seeing this message, you cannot play this video in the browser.">
+                  </object>
                 </video>
-                <canvas id="canvasOverlay" width="373" height="280" ></canvas>
+
+                <canvas id="canvasOverlay" width="373" height="280"></canvas>
                 <div class="ctrl">
                   <div id="playPause" class="pp paused" tabindex="1" title="Play">Play/Pause</div>
                   <div id="timer" class="timer">00:00</div>
                   <div id="muteUnmute" class="mu unmuted" tabindex="2">Mute/Un­mute</div>
-                </div><!-- #controls -->
-              </div><!-- /#video-container -->
+                </div>
+
+              </div>
 
               <h1 class="primaryH1">Video is the final frontier, and now we have conquered it!</h1>
               <div class="primaryColContent">

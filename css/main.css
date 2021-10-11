@@ -513,25 +513,21 @@ aside p + a {
 
 
 /* Video Controls */
-
-.videoControls {
+#video-container {
   width: 373px;
   margin: 0 auto;
-  position: relative;
-}
+  position: relative; }
 
 video {
   display: block;
-  margin-bottom: 12px;
-}
+  margin-bottom: 12px; }
 
 video,
 .content h1 {
   -webkit-column-span: all;
   -moz-column-span: all;
   column-span: all;
-  clear: both;
-}
+  clear: both; }
 
 .cnvs {
   position: absolute;
@@ -540,30 +536,28 @@ video,
   /* to avoid seeing the video in color for a second before the JavaScript runs
    * show a black background instead */
   background-color: black;
-  margin-bottom: 25px;
-}
+  margin-bottom: 25px; }
 
 .myCanvas {
   border: 2px dotted black;
-  margin: 0 20px;
-}
+  margin: 0 20px; }
 
-
+.vc {
+  width: 373px;
+  margin: 0 auto;
+  position: relative; }
 
 .ctrl {
   position: absolute;
   bottom: 0px;
   opacity: .5;
   -webkit-transition: opacity .7s linear;
-  transition: opacity .7s linear;
-}
+  transition: opacity .7s linear; }
 .ctrl:hover {
-  opacity: 1;
-}
+  opacity: 1; }
 
 .hidden {
-  display: none;
-}
+  display: none; }
 
 .pp,
 .mu {
@@ -571,20 +565,16 @@ video,
   height: 25px;
   float: left;
   text-indent: -9999em;
-  border-right: solid 1px #555;
-}
+  border-right: solid 1px #555; }
 .pp:hover,
 .mu:hover {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 .paused {
-  background: #ccc url(../img/controls-sprite.png) no-repeat 0 -75px;
-}
+  background: #ccc url(../img/controls-sprite.png) no-repeat 0 -75px; }
 
 .playing {
-  background-position: 0 -50px;
-}
+  background-position: 0 -50px; }
 
 .timer {
   width: 321px;
@@ -593,27 +583,22 @@ video,
   float: left;
   text-align: center;
   line-height: 25px;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 .mu {
   overflow: hidden;
   border-right: none;
-  border-left: solid 1px #555;
-}
+  border-left: solid 1px #555; }
 
 .unmuted {
-  background: #ccc url(../img/controls-sprite.png) no-repeat 0 -25px;
-}
+  background: #ccc url(../img/controls-sprite.png) no-repeat 0 -25px; }
 
 .muted {
-  background-position: 0 0;
-}
+  background-position: 0 0; }
 
 #canvasOverlay {
   position: absolute;
   top: 0px;
   left: 0px;
   background-color: #000;
-  margin-bottom: 25px;
-}
+  margin-bottom: 25px; }
