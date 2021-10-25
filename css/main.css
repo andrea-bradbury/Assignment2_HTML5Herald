@@ -167,7 +167,7 @@ nav ul {
 
 
 .primary {
-  width: 45%;
+  width: 48%;
   padding-right: 4px;
   box-sizing: border-box;
 }
@@ -187,16 +187,16 @@ nav ul {
 }
 
 .secondary h1 {
-  font-size: 22px;
-  padding: 0 0 8px 0;
+  font-size: 20px;
+  padding: 0 0 0 0;
   letter-spacing: -1px;
   font-family: LeagueGothic, Arial Narrow, Helvetica, sans-serif;
   text-align: left;
-  margin: 10px 0 8px 0;
+  margin: 0 0 0 0;
 }
 
 .tertiary {
-  width: 33%;
+  width: 28%;
   padding-left: 4px;
   margin-right: 0;
   box-sizing: border-box;
@@ -253,14 +253,14 @@ article h2{
   -webkit-column-gap: 10px;
   -moz-column-count: 3;
   -moz-column-width: 9em;
-  -moz-column-gap: 10px;
+  -moz-column-gap: 15px;
   column-count: 2;
   column-width: auto;
-  column-gap: 25px;
+  column-gap: 15px;
 }
 
 section  {
-  padding: 10px;
+  padding: 5px;
   margin: 10px;
   float: left;
 }
@@ -343,13 +343,7 @@ footer p {
   left: -2px;
 }
 
-.draganddrop #mouseContainer {
-  text-align:center;
-}
-.no-draganddrop #mouseContainer {
-  visibility:hidden;
-  height:0px;
-}
+
 
 #ad2 {
   background-image: url('../img/dukes.png' ) ;
@@ -365,10 +359,10 @@ footer p {
 #ad2 h1 {
   font-size: 20px;
   font-family: AcknowledgementMedium;
-  padding: 0 30px 0 75px;
+  padding: 0 20px 0 75px;
   line-height:1;
   color: #999;
-  margin: 0 0 0 15px;
+  margin: 0 0 0 0px;
 }
 
 #ad2 h1 span {
